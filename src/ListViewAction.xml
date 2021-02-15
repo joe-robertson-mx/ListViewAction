@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="first consulting.listviewaction.ListViewAction" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>List View Action</name>
+    <description>Actioning Mendix List View items</description>
+    <icon/>
+    <properties>
+        <property key="entity" type="string">
+            <caption>List view with entity</caption>
+            <category>General</category>
+            <description>Select the same entity as the list view that this widget should interact with. If multiple list views with this entity are found, the closest is used</description>
+        </property>
+        <property key="microflow" type="string">
+            <caption>Microflow to be called on click</caption>
+            <category>General</category>
+            <description>Enter the name of the microflow to be called on click</description>
+        </property>
+        <property key="btn" type="boolean" defaultValue="true">
+            <caption>Button</caption>
+            <category>General</category>
+            <description>Set true to render button, false for link</description>
+        </property>
+        <property key="btnText" type="string">
+            <caption>Text for the button</caption>
+            <category>General</category>
+            <description>Enter the text to be shown on the button</description>
+        </property>
+        <property key="btnGlyph" type="string">
+            <caption>Glyphicon string</caption>
+            <category>General</category>
+            <description>Enter the text representation of the glyphicon you want (leave blank for none)</description>
+        </property>
+
+    </properties>
+</widget>
